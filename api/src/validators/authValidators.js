@@ -1,5 +1,5 @@
 const { body } = require('express-validator');
-const validate = require('../middlewares/');
+const validate = require('../middlewares/validate');
 
 const registerRules = [
     body('user_first_name').trim().notEmpty().withMessage('First name is required'),
@@ -15,4 +15,4 @@ const loginRules = [
     validate,
 ];
 
-module.exports = { registerRules, loginRules }
+module.exports = { registerRules, loginRules };

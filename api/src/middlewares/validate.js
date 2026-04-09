@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const ApiError = require('./ApiError');
+const APIError = require('./APIError');
 
 const validate = (req, res, next) => {
     const errors = validationResult(req);
@@ -8,7 +8,7 @@ const validate = (req, res, next) => {
         errors.array().forEach((err) => {
             details[err.path] = err.msg;
         });
-        throw ApiError.badRequest('Validation failed', details);
+        throw APIError.badRequest('Validation failed', details);
     }
     next();
 };

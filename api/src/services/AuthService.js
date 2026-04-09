@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
-const UserRepository = require('../repositories/'); // FIX ME
-const APIError = require('../middlewares/'); // FIX ME
+const UserRepository = require('../repositories/UserRepository'); // FIX ME
+const APIError = require('../middlewares/APIError'); // FIX ME
 
 
 const SALT_ROUNDS = 10;

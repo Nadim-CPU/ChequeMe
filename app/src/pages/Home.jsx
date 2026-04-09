@@ -2,8 +2,8 @@
 const Home = () => {
     return(
         <>
-            <h3>Home Page</h3>
-            <p>This app represents professional structure</p>
+            <h1>Cheque Me</h1>
+            <p>Welcome to <strong>Cheque Me!</strong> Time is money, and you should know where your money is going quickly and efficiently.</p>
         </>
     )
 }
